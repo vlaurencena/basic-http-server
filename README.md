@@ -17,7 +17,8 @@ The API supports the following operations:
 * **Node.js**: Ensure you have Node.js installed on your machine.
 * **Postman**: Use Postman (or any API testing tool) to test the API endpoints.
 
-## Setup and running the application
+## Setup and running the application 
+
 Follow these steps to run the application:
 
 1. Clone repository and navigate to its directory:
