@@ -23,7 +23,6 @@ Follow these steps to run the application:
 1. Clone repository and navigate to its directory:
 
 ```bash
-Copy code
 git clone https://github.com/vlaurencena/basic-http-server
 cd basic-http-server
 ```
