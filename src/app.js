@@ -26,7 +26,7 @@ const server = http.createServer(async (request, response) => {
       response.writeHead(404, {
         "content-type": "application/json"
       });
-      response.end("No product with the specific id is available.");
+      response.end(JSON.stringify("No product with the specific id is available."));
     } else {
       response.writeHead(200, {
         "content-type": "application/json"
@@ -43,7 +43,7 @@ const server = http.createServer(async (request, response) => {
       response.writeHead(404, {
         "content-type": "application/json"
       });
-      response.end("A product with the specific id already exists. Choose another id.");
+      response.end(JSON.stringify("A product with the specific id already exists. Choose another id."));
     } else {
       products.products.push(JSON.parse(req_body));
       response.writeHead(201, {
@@ -60,7 +60,7 @@ const server = http.createServer(async (request, response) => {
       response.writeHead(404, {
         "content-type": "application/json"
       });
-      response.end("No product with the specific id is available.");
+      response.end(JSON.stringify("No product with the specific id is available."));
     } else {
       let req_body = await getRequestData(request);
       const index = products.products.indexOf(product);
@@ -80,14 +80,14 @@ const server = http.createServer(async (request, response) => {
       response.writeHead(404, {
         "content-type": "application/json"
       });
-      response.end("No product with the specific id is available.");
+      response.end(JSON.stringify("No product with the specific id is available."));
     } else {
       const index = products.products.indexOf(product);
       products.products.splice(index, 1);
       response.writeHead(200, {
         "content-type": "application/json"
       });
-      response.end("Deleted the specified product.");
+      response.end(JSON.stringify("Deleted the specified product."));
     }
   }
 
