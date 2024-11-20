@@ -34,7 +34,7 @@ cd basic-http-server
 npm install  
 ```
 
-3. Run the application
+3. Run the application:
 ```bash
 npm start  
 ```
